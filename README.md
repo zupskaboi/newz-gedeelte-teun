@@ -1,4 +1,4 @@
-#Newz app gedeelte 
+# Newz app gedeelte 
 
 Dit zijn de pagina's die ik heb gemaakt voor de proftaak in react js. 
 De eerste pagina is de selecteer bronnen pagina, hierin kan de gebruiker een voorkeur aangeven welke bronnen het liefst nieuws van wilt ontvangen.
@@ -7,7 +7,7 @@ Bij de tweede pagina is de selecteer categorie pagina, hierin kan de gebruiker e
 De bronnen heb ik in een online database gezet en opgevraagd om te tonen, alleen de online omgeving werkt niet zo goed nog dus heb ik de data nu hardcoded in de code gezet.
 Ook heb ik dit geprobeerd met de categorie pagina, alleen daar kreeg ik ook foutmeldingen.
 
-##SelectSource component
+## SelectSource component
 
 In de SelectSource component maak ik hier de data aan
 ![afbeelding](https://github.com/zupskaboi/newz-gedeelte-teun/assets/43807140/e7f9ce61-5b0c-49d7-8550-62bf7d5a5b9c)
@@ -28,6 +28,6 @@ Hier worden de checkboxes, de filterfunctie en andere elementen getoont.
 ![afbeelding](https://github.com/zupskaboi/newz-gedeelte-teun/assets/43807140/b396f75d-a01f-4445-b186-eae0f6742346)
 
 
-##gebruik maken van de app
+## gebruik maken van de app
 Om deze app te gebruiken heb je react js nodig. Ook moet je de modules: sass en react-dom installeren.
 
