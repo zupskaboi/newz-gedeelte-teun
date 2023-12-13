@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import '../style/components/CheckboxFields.scss'
-import axios from 'axios';
+// import axios from 'axios';
 
 
 class CheckboxFields extends React.Component {
