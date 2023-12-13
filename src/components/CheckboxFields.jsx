@@ -9,10 +9,10 @@ class CheckboxFields extends React.Component {
         this.state = {
             filterText: '', // State to store the filter text
             showSelected: false, // State to toggle displaying only selected
-            sourceData: [],
+            //sourceData: [],
         };
 
-        this.userData = [
+        this.sourceData = [
             { id: 1, name: 'RTL Nieuws', image: '/assets/images/rtlnieuws.png' },
             { id: 2, name: 'NOS', image: '/assets/images/nos.png' },
             { id: 3, name: 'Telegraaf', image: 'url_to_johns_image.jpg' },
@@ -25,21 +25,21 @@ class CheckboxFields extends React.Component {
         ];
 
         // Initialize state properties for each checkbox
-        this.state.sourceData.forEach((source) => {
+        this.sourceData.forEach((source) => {
             this.state[`checkbox${source.id}`] = false;
         });
     }
 
-    componentDidMount() {
-        // Fetch data from the server when the component mounts
-        axios.get('/bronnenserver.php')  // Replace with your actual server URL
-            .then(response => {
-                this.setState({ sourceData: response.data });
-            })
-            .catch(error => {
-                console.error('Error fetching data:', error);
-            });
-    }
+    // componentDidMount() {
+    //     // Fetch data from the server when the component mounts
+    //     axios.get('/bronnenserver.php')  // Replace with your actual server URL
+    //         .then(response => {
+    //             this.setState({ sourceData: response.data });
+    //         })
+    //         .catch(error => {
+    //             console.error('Error fetching data:', error);
+    //         });
+    // }
 
     handleCheckboxChange = (sourceId) => {
         this.setState((prevState) => ({
@@ -56,9 +56,9 @@ class CheckboxFields extends React.Component {
         //const checkedCount = Object.values(this.state).filter(Boolean).length;
         const visibleUsers = this.state.showSelected
             ? this.getSelectedCheckboxes()
-            : this.state.sourceData.filter(
+            : this.sourceData.filter(
                 (source) =>
-                    source.naam
+                    source.name
                         .toLowerCase()
                         .includes(this.state.filterText.toLowerCase())
             );
@@ -79,7 +79,7 @@ class CheckboxFields extends React.Component {
 
     getSelectedCheckboxes = () => {
         // Get an array of user objects for selected checkboxes
-        const selectedUsers = this.state.sourceData.filter(
+        const selectedUsers = this.sourceData.filter(
             (source) => this.state[`checkbox${source.id}`]
         );
         return selectedUsers;
@@ -89,9 +89,9 @@ class CheckboxFields extends React.Component {
 
     render() {
         // Apply filter based on the user input
-        let filteredUserData = this.state.sourceData.filter(
+        let filteredUserData = this.sourceData.filter(
             (source) =>
-                source.naam.toLowerCase().includes(this.state.filterText.toLowerCase())
+                source.name.toLowerCase().includes(this.state.filterText.toLowerCase())
         );
 
         if (this.state.showSelected) {
@@ -104,8 +104,8 @@ class CheckboxFields extends React.Component {
                 <div key={source.id} className="checkbox-container">
                     <label className="checkbox-label">
                         <div className="source-title">
-                            <img src={source.bronnenLogo} className="source-image" />
-                            <p className="source-text">{source.bronnenNaam}</p>
+                            <img src={source.image} className="source-image" />
+                            <p className="source-text">{source.name}</p>
                         </div>
                         <input
                             type="checkbox"
