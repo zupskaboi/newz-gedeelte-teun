@@ -28,6 +28,8 @@ Hier worden de checkboxes, de filterfunctie en andere elementen getoont.
 ![afbeelding](https://github.com/zupskaboi/newz-gedeelte-teun/assets/43807140/b396f75d-a01f-4445-b186-eae0f6742346)
 
 
+Deze structuur heb ik ook bij de SelectTopics component gebruikt.
+
 ## gebruik maken van de app
 Om deze app te gebruiken heb je react js nodig. Ook moet je de modules: sass en react-dom installeren.
 
