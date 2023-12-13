@@ -1,0 +1,21 @@
+.RedBtn{
+    text-align: center;
+    position: relative;
+    height: 5vh;
+    width: 100%;
+    border: none;
+    background-color: red;
+    color: white; 
+    font-family: 'Poppins Bold';
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.RedBtn:hover{
+    background-color: white;
+    color: red;
+    cursor: pointer;
+    border: none;
+    outline: 2px solid red;
+    outline-offset: -2px;
+}

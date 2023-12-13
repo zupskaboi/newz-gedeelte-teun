@@ -1,0 +1,171 @@
+.line-container {
+    margin-bottom: 40px;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 15px auto;
+}
+
+.selection-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.selection-options {
+    display: flex;
+    justify-content: space-between;
+    color: #262626;
+    font-size: 14px;
+    font-family: 'Mont Heavy DEMO';
+    font-weight: 900;
+    width: 58%;
+}
+
+.checked-total {
+    display: flex;
+}
+
+.checked-count {
+    width: 13px;
+    margin-left: 1px;
+    background-color: #ED0000;
+    padding-left: 5px;
+    border-radius: 50%;
+    height: 18px;
+    color: white;
+}
+
+.source-line {
+    height: 1px;
+    width: 250px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.source-filter {
+    display: flex;
+    color: #262626;
+    font-size: 14px;
+    font-family: 'Mont Heavy DEMO';
+    font-weight: 900;
+    width: 62%;
+}
+
+.source-filter p {
+    margin: 11.5px 0;
+}
+
+.source-filter input {
+    border: 0;
+    margin-left: 5px;
+    margin-bottom: 2px;
+    color: #262626;
+    font-family: 'Poppins Medium';
+    font-weight: 500;
+}
+
+.source-filter input:focus {
+    outline: none;
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    height: 30px;
+    font-family: 'Mont Heavy DEMO';
+    font-weight: 900;
+}
+
+.source-list {
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 360px;
+}
+
+.source-line {
+    height: 1px;
+    width: 250px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.source-title {
+    display: flex;
+    align-items: center;
+    width: 185px;
+}
+
+.source-text {
+    margin-top: 4px;
+}
+
+.source-image {
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #000;
+    background-color: #fff;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.custom-checkbox {
+    border-radius: 50%;
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Style the checkbox when checked */
+.custom-checkbox:checked {
+    background-color: #ED0000;
+    /* Change this to the desired color */
+}
+
+.custom-checkbox::before {
+    display: none;
+    // /* Initially hide the checkmark */
+    content: "";
+    background-color: transparent;
+
+    /* position the checkbox */
+    position: absolute;
+    left: 3.75px;
+    top: 1px;
+
+    /* setting the checkbox */
+    /* short arm */
+    width: 4px;
+    border-bottom: 2px solid #fff;
+    /* long arm */
+    height: 8px;
+    border-right: 2px solid #fff;
+
+    /* rotate the mirrored L to make it a checkbox */
+    transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.custom-checkbox:checked::before {
+    display: block;
+    /* Display the checkmark when the checkbox is checked */
+}
