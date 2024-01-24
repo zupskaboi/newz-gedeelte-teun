@@ -33,3 +33,4 @@ Deze structuur heb ik ook bij de SelectTopics component gebruikt.
 ## gebruik maken van de app
 Om deze app te gebruiken heb je react js nodig. Ook moet je de modules: sass en react-dom installeren.
 
+Hier is de online omgeving van de app: https://newz-gedeelte-teun.vercel.app/
