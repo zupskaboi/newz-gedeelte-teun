@@ -34,3 +34,7 @@ Deze structuur heb ik ook bij de SelectTopics component gebruikt.
 Om deze app te gebruiken heb je react js nodig. Ook moet je de modules: sass en react-dom installeren.
 
 Hier is de online omgeving van de app: https://newz-gedeelte-teun.vercel.app/
+
+## Kansen en Risico's
+De kansen met dit project zijn dat dit makkelijk toegevoegd kan worden in een ander react project. Hierin gebruik ik namelijk methodes dat meestal gebruikt worden in andere projecten.
+De risico's zijn meer het gebruiken van de database. als de database het niet doet dan is er geen data om te laten zien. Ook kunnen de dependencies van de app een bug krijgen waardoor de app dan niet meer werkt.
