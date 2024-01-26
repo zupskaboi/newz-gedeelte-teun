@@ -1,5 +1,6 @@
 {
   "name": "newz-gedeelte-teun",
+  "description": "Mijn gedeelte van de Newz app met de selecteer bronnen en onderwerpen",
   "homepage": ".",
   "version": "0.1.0",
   "private": true,
