@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Newz app gedeelte 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Dit zijn de pagina's die ik heb gemaakt voor de proftaak in react js. 
+De eerste pagina is de selecteer bronnen pagina, hierin kan de gebruiker een voorkeur aangeven welke bronnen het liefst nieuws van wilt ontvangen.
+Bij de tweede pagina is de selecteer categorie pagina, hierin kan de gebruiker een voorkeur aangeven welke categorie wilt bekijken.
 
-## Available Scripts
+De bronnen heb ik in een online database gezet en opgevraagd om te tonen, alleen de online omgeving werkt niet zo goed nog dus heb ik de data nu hardcoded in de code gezet.
+Ook heb ik dit geprobeerd met de categorie pagina, alleen daar kreeg ik ook foutmeldingen.
 
-In the project directory, you can run:
+## SelectSource component
 
-### `npm start`
+In de SelectSource component maak ik hier de data aan
+![afbeelding](https://github.com/zupskaboi/newz-gedeelte-teun/assets/43807140/e7f9ce61-5b0c-49d7-8550-62bf7d5a5b9c)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Met dit stukje code vraag ik om de data van de online database(wat nu nog niet goed werkt)
+![afbeelding](https://github.com/zupskaboi/newz-gedeelte-teun/assets/43807140/78ea610d-e7f3-4c4e-9197-7632918d9ff9)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Hier word gecheckt of the checkboxes gechecked worden
+![afbeelding](https://github.com/zupskaboi/newz-gedeelte-teun/assets/43807140/87ffa0c8-1aa5-4699-8f5e-657660045b22)
 
-### `npm test`
+Voor de filter functie van de geselecteerde checkboxes worden de gecheckte boxes eruit gehaald.
+![afbeelding](https://github.com/zupskaboi/newz-gedeelte-teun/assets/43807140/8927f134-f0b9-4675-8d3f-af5dbdf55028)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Hier worden de checkboxes aangemaakt met de naam en afbeelding
+![afbeelding](https://github.com/zupskaboi/newz-gedeelte-teun/assets/43807140/b916b3aa-3b9b-4b6c-a0c6-7222cfe16a0c)
 
-### `npm run build`
+Hier worden de checkboxes, de filterfunctie en andere elementen getoont.
+![afbeelding](https://github.com/zupskaboi/newz-gedeelte-teun/assets/43807140/b396f75d-a01f-4445-b186-eae0f6742346)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Deze structuur heb ik ook bij de SelectTopics component gebruikt.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## gebruik maken van de app
+Om deze app te gebruiken heb je react js nodig. Ook moet je de modules: sass en react-dom installeren.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Hier is de online omgeving van de app: https://newz-gedeelte-teun.vercel.app/
